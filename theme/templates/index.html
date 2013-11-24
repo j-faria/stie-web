@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block blog_content %}
+
+
+<!--<ul id="post-list">-->
+{% for article in articles_page.object_list %}
+
+    <h3><span class="sub">{{ article.locale_date }}</span>
+    {{ article.title }}</h3>
+<!--    </br>-->
+    <div class="post_body"> {{ article.content }} </div><!-- /.entry-content -->
+
+    <div class="divider564"></div>    
+
+
+{% endfor %}
+<!--</ul><!-- /#posts-list -->
+
+<!--{% include 'pagination.html' %}-->
+
+{% endblock blog_content %}
