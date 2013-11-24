@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////   the meta data. Its a good idea if you edit the meta tags to suit you  /////////////////  -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<meta charset="UTF-8" />
+<meta name="title" content="João Faria" />
+<meta name="keywords" content="CV, Resume, Business, Professional, Designer, etc." />
+<meta name="description" content="My personal webpage" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////  include the main, print and handheld stylesheets, plus jquery and ajax form script /////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<link id="pagestyle" rel="stylesheet" 
+      href="static/css/style_default.css" 
+      type="text/css" media="screen" title="Darker theme" />
+<!--<link rel="alternate stylesheet" -->
+<!--      href="css/style_light.css" -->
+<!--      type="text/css" media="screen" title="Lighter theme" />-->
+<link href="static/css/pygments.css" rel="stylesheet" />  <!-- Pygments syntax highlighter-->
+
+<script type="text/javascript" src="static/js/jquery_1.4.2.min.js"></script>
+<script type="text/javascript" src="static/js/prism.js"></script>  <!-- Prism syntax highlighter-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////  google Arvo font   /////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////   if its IE then we need to include the famous shiv, so that IE gets HTML5!  ////////////  -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<script src="scripts/DD_belatedPNG.js"></script>
+	<link rel="stylesheet" href="css/ie6.css" type="text/css" />
+	<script>
+     DD_belatedPNG.fix('.transparent, #chart img, .employment_img, .weblink, .divider, .social_media');
+	</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie6.css" type="text/css" />
+<![endif]-->
+
+	
+<title>Jo&atilde;o Faria's homepage</title>
+</head>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////   start the page code  //////////////////////////////////////  -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<body>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///// this is the fallback PHP script to capture the form data if javascript is not enabled ////////  -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div id="wrapper">
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //// the side bar navigation area. See the documentation on how to edit this to your liking ////////  -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div id="sidebar">
+	<nav role="navigation">
+		<ul>
+		    <li><a href="#aboutmepage" class="btn-slide" id="about" title="Find out a little more about me!">About Me</a></li>
+		    <li><a href="#newspage", class="btn-slide", id="news", title="What's new">What's New</a></li>
+			<li><a href="#researchpage" class="btn-slide" id="research" title="View my research and experience">Research</a></li>
+			<li><a href="#educationpage" class="btn-slide" id="education" title="Where I studied">Curriculum</a></li>
+			<li><a href="#publicationspage" class="btn-slide" id="publications" title="Publications">Publications</a>
+			<li><a href="#employmentpage" class="btn-slide" id="employment">Codes</a>
+<!--				<ul class="subnav">-->
+<!--					<li><a href="#sub1page" class="btn-slide sublink" id="sub1" title="A sub page">Big Fish</a></li>-->
+<!--					<li><a href="#sub2page" class="btn-slide sublink" id="sub2" title="Another sub page">Small Pond</a></li>-->
+<!--				</ul>	-->
+			</li>
+<!--				<ul class="subnav">-->
+<!--					<li><a href="#sub3page" class="btn-slide sublink" id="sub3" title="Yet another sub page">Sub 3</a></li>-->
+<!--				</ul>				-->
+			</li>
+<!--			<li><a href="#contactpage" class="btn-slide" id="contact" title="Feel free to Contact Me.">Contact</a></li>-->
+			<li><div class="divider"></div></li>
+			<li style="white-space:nowrap;">
+			    <a href="http://www.astro.up.pt/" id="caup_link" title="Centro de Astrofísica da Universidade do Porto">> CAUP</a>
+			    <a href="http://sigarra.up.pt/fcup/" id="fcup_link" title="FCUP">> FCUP</a>
+			</li>
+		</ul>
+	</nav>
+</div> 
+<!-- end sidebar -->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////// all the page content is inside this div.page_wrap  ///////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="page_wrap">
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////// the main header, whereyour contact details are displayed  ////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		
+		<header role="banner">
+	    		<p id="email_link" class="transparent">
+	    		   <span class="print_only hidden">Email: </span>
+	    		   <a href="mailto:joao.faria@astro.up.pt" title="Email">joao.faria@astro.up.pt</a>
+	    		</p>
+	    		<p id="web" class="transparent">
+	    		   <span class="print_only hidden">Website :</span>
+	    		   <a href="#" title="This site">www.astro.up.pt/~jfaria</a>
+	    		</p>
+	    		<p id="twitter" class="transparent">
+	    		   <a href="http://www.twitter.com/astroaware" target="_blank" title="Twitter">@astroaware</a>
+	    		</p>
+
+                <p id="changestyle" class="transparent">
+<!--                   <input id="btn" type="button" onclick="swapStyleSheet('css/style_default.css')" value="darker" />-->
+<!--                   <input id="btn" type="button" onclick="swapStyleSheet('css/style_light.css')" value="lighter" />-->
+                </p>
+<!--	    		<p id="print" class="transparent">-->
+<!--	    		   <input id="btn" type="button" onclick="window.print()" value="Print" />-->
+<!--	    		</p>-->
+		</header>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////// this is where your name and any sub title are shown //////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<hgroup>
+	    	<h1 class="headline">JOÃO P. FARIA</h1>
+	    	<h2 class="sub_headline">MSc Student @ CAUP</h2>
+		</hgroup>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////// This is the ABOUT ME section  ////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<section class="panel about" id="aboutmepage">
+			
+			<h3 class="title_about transparent">&nbsp;</h3>
+			<div class="divider"></div>
+			<article>
+				<h4>WELCOME</h4>
+				<p>I am a student of Astrophysics, at the Faculty of Science of University of Porto, currently in the second year of the Master in Astronomy course, working on my thesis.
+I have finished a "Licenciatura" (undergraduate degree) in Physics, with a minor in Astrophysics, at the University of Lisbon and am interested in pursuing a research career in astronomy and astrophysics. <br/>
+This is my webpage. Feel free to browse through some of my work or to contact me. </p>
+			</article>			
+		</section>
+		
+		
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////// This is the NEWS section, managed by Django  ///////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<section class="panel news" id="newspage">
+			<h3 class="title_news transparent">NEWS</h3>
+			<div class="divider"></div>
+			<article>
+			    <section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://www.astro.up.pt/~jfaria/gnuplot-is-awesome.html" rel="bookmark"
+         title="Permalink to Gnuplot is awesome!">Gnuplot is awesome!</a></h2>
+  
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-05-18T17:24:00">
+      Sat 18 May 2013
+    </abbr>
+        <address class="vcard author">
+      By <a class="url fn" href="http://www.astro.up.pt/~jfaria/author/joao-faria.html">João Faria</a>
+    </address>
+      </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>I just discovered that Gnuplot can do conditional plotting, even on tabular data from a file.
+Check out <a href="http://www.techrepublic.com/blog/opensource/how-to-create-conditional-plotting-with-gnuplot/2993" target="_blank">this article</a>.</p>
+<p>This just increases my admiration for this little tool. Granted, the plots may not look as nice as the ones from matplotlib (at
+least not without considerable tweaking), but when you just need to quickly dive into the data to check for patterns nothing
+beats Gnuplot.</p>
+
+  </div><!-- /.entry-content -->
+</section>
+			</article>
+			<div align="center">
+			<article>
+			powered by <a href="http://getpelican.com/">Pelican</a>
+                    and <a href="http://python.org">Python</a>. 
+            </article>
+            </div>
+		</section>	
+		
+		
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the RESEARCH section  ////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<section class="panel research" id="researchpage">
+			<h3 class="title_research transparent">RESEARCH</h3>
+			<div class="divider"></div>
+			<article>
+				<div id="chart"></div>
+				<p>I'm mainly interested in everything related to stars, but I have worked on different areas over the (last few) years. Here are some highlights.
+				</p>
+			</article>
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">M.Sc. Thesis</span>Asteroseismology of 16 Cyg A &amp B</h4>
+			<p>
+			<img class="employment_img floatLeft" src="static/images/asteroseismology_small.png" title="" alt="#" />
+			The Kepler space telescope has produced very precise long-term 
+			photometric time series data for thousands of stars in its quest to 
+			find planets similar to Earth. The data allowed the detection of 
+			solar-like oscillations in a wide range of stellar types, from 
+			giants to subdwarfs. Stellar oscillations allow us to improve 
+			structure and evolution models because they are the only observables
+			probing the internal properties of stars. The correct use of all the
+			information contained in the oscillation frequencies can provide 
+			very precise estimates of the masses, radii, ages and chemical 
+			abundances of stars. The study of the available diagnostics tools 
+			that use only data that can be observed in stars other than the Sun 
+			is thus valuable in order to explore the full potential of current
+			and future observations. In this work, I focus on two particular 
+			sources, the components of the 16 Cyg binary, and use asteroseismic 
+			tools to extract information about their interior regions. I perform
+			model fitting of the observed frequencies and investigate the so 
+			called acoustic glitches – regions with an abrupt change in the 
+			stratification of the star – and their effect on the observed 
+			oscillation frequencies.
+			</br>
+			The associated webpage can be found <a href="msc-thesis.html" title="">here</a>
+			</br></br>
+			</p>
+			</article>
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">Bachelors Degree</span>Colours &amp Metalicities of BCD in the Virgo Cluster</h4>
+			<p>
+			<img class="employment_img floatLeft" src="static/images/bcd.jpg" title="" alt="#" />
+			In the last semester of the undergraduate degree in Physics, I worked on a research project with Doctor Marco Grossi, studying the colours and metallicities of blue compact dwarf galaxies (BCD) in the Virgo Cluster. I analysed photometric and spectroscopic data from the SDSS for a sample of BCDs and derived estimates for the metallicities, trying to evaluate the effect of the dense cluster environment in the evolution of these objects. 
+			</p>						
+		</section>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the CURRICULUM section  //////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<section class="panel education" id="educationpage">
+			<h3 class="title_education transparent">CURRICULUM</h3>
+			<div class="divider"></div>		
+			<h4 align="center">EDUCATION</h4>	
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">2011 - 2012</span>MSc in Astronomy (curricular year)</h4>
+			<ul>
+			    <li>Faculty of Science of the University of Porto</li>
+				<li>Study plan can be acessed <a href="https://sigarra.up.pt/fcup/en/CUR_GERAL.CUR_PLANOS_ESTUDOS_VIEW?pv_plano_id=3421&pv_ano_lectivo=2012&pv_tipo_cur_sigla=&pv_origem=CUR" 
+				                                 target="_blank"
+				                                 class="stdlink CondensedOblique">here</a></li>
+				<li>Final average grade: 17/20.</li>
+			</ul>
+			</article>
+			<article>
+			<h4><span class="sub">2008 - 2011</span>BSc in Physics, minor in Astrophysics</h4>
+			<ul>
+			    <li>Faculty of Science of the University of Lisbon</li>
+				<li>Study plan can be acessed <a href="http://fc.ul.pt/en/cursos/licenciatura/fisica" 
+				                                 target="_blank"
+				                                 class="stdlink CondensedOblique">here</a></li>
+				<li>Final average grade: 16/20.</li>
+			</ul>
+			</article>
+<!--			<div class="divider564"></div>	-->
+			<h4 align="center">GRANTS</h4>	
+			<div class="divider564"></div>
+			<article>	
+			<h4><span class="sub">2012</span>Probing Inside Binary Stars with Asteroseismology</h4>
+			<ul>
+			    <li>Project ID: PTDC/CTE-AST/098754/2008</li>
+                <li>Supervisors: M&aacute;rio J. P. F. G. Monteiro; Margarida Cunha</li>
+                <li>Institution: Centro de Astrof&iacute;sica da Universidade do Porto (CAUP)</li>
+                <li>Duration: 1 July 2012 - 31 December 2012 (6 months)</li>
+            </ul>
+			</article>
+
+		</section>				
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the PUBLICATIONS section  ////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<section class="panel publications" id="publicationspage">
+			<h3 class="title_publications transparent">PUBLICATIONS</h3>
+			<div class="divider"></div>		
+			<h4 align="center">REFEREED ARTICLES</h4>	
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub"><a href="http://adsabs.harvard.edu/abs/2012AN....333..954F" 
+			                         target="_blank"
+			                         class="stdlink CondensedOblique">2012AN....333..954F</a></span>
+			                         Faria, J.P. &amp Monteiro, M.J.P.F.G. (2012)
+			</h4>
+			<p><img class="image_article" src="static/images/paper1.png" title="paper1" alt="#" />
+			In this work we try to illustrate how the oscillation p-mode frequencies of idealized white dwarf models change as the result of a different chemical composition in the core, with the ultimate goal of determining the chemical stratification from seismic observations. The presence of acoustic glitches in the internal structure results in a periodic signal in the frequencies. We find that this signal depends on the chemical stratification/composition of the core in a form that can be analytically modelled. 
+			</br>
+			</br>
+			</article>
+			<h4 align="center">TALKS / POSTERS</h4>	
+
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub"></span>Acoustic Glitches in 16 Cygni</h4>
+			(6th Iberian Meeting on Asteroseismology, Aras de los Olmos (Valencia), Spain, May 27-29, 2013)
+			</br>
+			</br>
+			(XXIII Encontro Nacional de Astronomia e Astrofísica, Lisboa, July 18-19 2013)
+			<article>
+			<h4><span class="sub">2013-01-16</span>MESA - Modules for Experiments in Stellar Astrophysics</h4>
+			(CAUP cookie seminar)
+			</article>
+			<article>
+			<h4><span class="sub">2012-05-20</span>
+			Using seismic probes to study the core composition in pulsating white dwarfs</h4>
+			(The Modern Era of Helio- and Asteroseismology, Obergurgl, Austria)
+			</article> 
+	
+			<article>
+			<h4><span class="sub">2011-07-13</span>Cores e metalicidades de gal&aacute;xias an&atilde;s azuis no Enxame da Virgem</h4>
+			(Bachelor thesis defense)
+			</article>	 					
+		</section>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the sub2 section  //////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<section class="panel sub3" id="sub3page">
+			<h3 class="title_publications transparent">SUB 3</h3>
+			<div class="divider"></div>
+			<article>
+				<h4>Ah Man, another sub section? </h4>
+				<p>I'm affriad so, but really, you dont have to use them, they are just here to use if you want them!</p>
+			</article>
+			<div class="divider564"></div>
+									
+		</section>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the CODES section  ///////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		
+		<section class="panel employment" id="employmentpage">
+			<h3 class="title_employment transparent">CODES</h3>
+			<div class="divider"></div>
+			<article>
+			I'm still building this page, come back soon.
+			</article>
+<!--			<article>-->
+<!--				<p>No modern astronomer can survive without software. </br>-->
+<!--				   I mainly use Fortran and Python as work-horses and try to explore-->
+<!--				   any possible sinergy between the two in order to make things happen.-->
+<!--				   </br>-->
+<!--				   This page hosts both bigger and more mature software projects-->
+<!--				   and smaller snippets of code.-->
+<!--				</p>-->
+<!--			</article>-->
+<!--			<div class="divider564"></div>-->
+<!--			<article>-->
+<!--			<h4><span class="sub">2009 - PRESENT DAY</span>YELLOWFISH MEDIA </h4>-->
+<!--			<p><img class="employment_img floatLeft" src="images/yellow_fish.png" title="YellowFish Media" alt="#" />Here is a picture of a yellow fish (in full colour too). Its just an example of how a paragraph might look if you want to add an image, for example a copany logo. Ive added some notes in the docs that come with the download to help you out :) </p>-->
+<!--			<p class="web"><a href="#" class="weblink CondensedOblique" title="Take me to the homepage of Yellow Fish Media">www.yellowfishmedia.com</a></p>-->
+<!--			</article>-->
+<!--			<div class="divider564"></div>-->
+			
+		</section>	
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the sub1 section  //////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<section class="panel sub1" id="sub1page">
+			<h3 class="title_employment transparent">CODES</h3>
+			<div class="divider"></div>
+			<article>
+				<h4>An example of a sub page</h4>
+				<p>Anything can go here. Or we can just copy the research page ;-)</p>
+			</article>
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">ADVANCED</span>PHP / MySQL</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
+			</article>
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">INTERMIDIATE</span>CSS / XHTML / HTML5</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
+				<ul>
+					<li>CSS3 Guru</li>
+					<li>XHTML God</li>
+					<li>HTML5 wannabe</li>
+				</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>	
+			</article>
+			<div class="divider564"></div>
+			<article>
+			<h4><span class="sub">BEGINNER</span>jQuery / JAVASCRIPT</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
+			</article>						
+		</section>
+	
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the sub2 section  //////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<section class="panel sub2" id="sub2page">
+			<h3 class="title_employment transparent">SUB 2</h3>
+			<div class="divider"></div>
+			<article>
+				<h4>Yet another sub page </h4>
+				<p>But this sub page has no text? 
+				Thats right, it is just a simple example, fully documented in the readme file.</p>
+			</article>
+			<div class="divider564"></div>
+									
+		</section>
+		
+		
+
+
+				
+		<!-- Any new sections would go here  :) -->
+		
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////// the footer message  //////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<p class="footnote t-center"></p>	
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////// this is a nice little message that only shows on the printed version :) /////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<div id="printed-footnote">Thank you for printing my CV. If you have any questions, please feel free to contact me.</div>
+		
+</div><!-- end page wrap -->
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////// This is the header pic profile image. The divs are positioned absolute so  //////////////// -->
+<!-- //////// you dont need to worry, you can however, change the css if you wish        //////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="pic_frame_wrapper" class="box-shadow transparent">
+	<div id="pic_frame">
+	</div><!-- end pic_frame -->
+</div><!-- end pic_frame_wrapper -->
+
+</div><!-- end_wrapper -->
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////// a script to change the current style sheet     ////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script type="text/javascript">
+function swapStyleSheet(sheet) {
+    document.getElementById('pagestyle').setAttribute('href', sheet);
+
+}
+</script>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////// some jquery magic to say, when you click on a nav tab, hide all sections   ////////// -->
+<!-- ////////////// except the section I want to see.                                          ////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	// scroll page to top on load
+	$('html, body').animate({scrollTop:0}, 'slow');
+
+	// show only the first section when the page loads
+	$(".panel").slice(0,1).show().addClass('activePanel');
+	
+	// hide all the other sections
+	$('.panel').slice(1).hide(); 
+	
+	// Change the first link in the navigation to an active status
+	$(".btn-slide").slice(0,1).addClass('activeLink');
+
+	// when you click on a navigation, do something
+	$(".btn-slide").click(function(){
+			
+			if(!$(this).hasClass('sublink'))
+			{
+				// scroll up all subnavs
+				$(".subnav").slideUp('fast');
+				
+				// if the link has a subnav, slide it down
+				if($(this).siblings('.subnav'))
+				{
+					$(this).siblings(".subnav").slideDown('slow');//css('display','block');
+				}	
+			}
+			
+		// if the nav link clicked is already active then 
+		// do something, else do something else
+		if($(this).hasClass('activeLink'))
+		{
+			
+			
+			// if you want, you can add some style/effect to the 
+			// link thats already active when pressed. I've left this 
+			// blank becuase im happy that nothing happens :)
+		} else { 
+		  
+			
+			// if the nav link is not active, then slide
+		  // up the current active panel (section)
+		  $('.activePanel').slideUp('slow');
+		  
+		  // we then slidedown the panel (section) that has the 
+		  // same class name as the navigation ID
+		  var contentPanel = $(this).attr('id');
+		  $("."+contentPanel).addClass('activePanel').slideDown('slow');
+			
+		  // then we remove the active link status from its current
+		  // place and add .activelink to the nav link clicked
+		  $('.activeLink').toggleClass("activeLink");
+		  $(this).toggleClass("activeLink");
+		  
+		  // jut to be sure, we scroll the page to the top so that the user
+		  // always sees the top headings after clicking a new link
+		  $('html, body').animate({scrollTop:0}, 'slow');
+		}
+	  return false;
+	});
+
+});
+</script>
+<script language="javascript" src="http://www.google.com/jsapi"></script>
+<script language="javascript" src="/static/js/google_chart.js"></script>
+    </body>
+</html>
